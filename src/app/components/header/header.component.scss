@@ -1,0 +1,27 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #213458;
+    &__logo {
+        width: 6rem;
+        height: 6rem;
+    }
+    &__cart-icon {
+        cursor: pointer;
+        height: 4rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    &__cart-container {
+        float: right;
+        & span {
+            position: absolute;
+            right: 2.2rem;
+            top: 1.4rem;
+            font-weight: 600;
+            color: #aea9a9;
+        }
+    }
+}

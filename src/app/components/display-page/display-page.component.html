@@ -1,0 +1,37 @@
+<!-- Search Bar Container -->
+<div class="search-bar-container">
+    <input type="text" class="search-bar-container__input" [(ngModel)]="searchText" placeholder="Enter text to search the item">
+    <img class="search-bar-container__icon--search" src="../../../assets/images/search.png">
+</div>
+<!-- End of Search Bar Container -->
+<!-- Display Container to show items in card view -->
+<div class="display-container">
+    <!-- Card view to loop over itemsArray -->
+    <div class="card" *ngFor="let item of itemsArray | filterItems: searchText">
+        <!-- Image container for item -->
+        <div class="card__image-container">
+            <img src={{item.thumbnail}} alt="" class="card__thumbnail">
+        </div>
+        <!-- Name container for item -->
+        <div class="card__name">
+            {{item.name}}
+        </div>
+        <!-- Price container for item -->
+        <div class="card__price">
+            <span>Price: </span>{{item.price}}
+        </div>
+        <!-- Category container for item -->
+        <div class="card__category">
+            <span>Category: </span>{{item.category}}
+        </div>
+        <!-- Rating container for item -->
+        <div class="card__rating">
+            <span>Rating: </span>{{item.rating}}
+        </div>
+        <!-- "ADD TO CART" button container for item -->
+        <div class="card__btn" (click)="addToCart(item)">
+            <span>ADD TO CART</span>
+        </div>
+    </div>
+</div>
+<!-- End of Display Container -->

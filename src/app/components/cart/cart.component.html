@@ -1,0 +1,34 @@
+<!-- Cart Container -->
+<div class="cart-container">
+    <!-- "Continue Shopping button on cart page" -->
+    <button class="go-back-btn" routerLink="/display">CONTINUE SHOPPING</button>
+    <!-- Card view to loop over cartItems -->
+    <div class="card" *ngFor="let item of cartItems">
+        <!-- Image container for cartItem -->
+        <div class="card__image-container">
+            <img src={{item.thumbnail}} alt="" class="card__thumbnail">
+        </div>
+        <!-- Name container for cartItem -->
+        <div class="card__name">
+            {{item.name}}
+        </div>
+        <!-- Price container for cartItem -->
+        <div class="card__price">
+            Price:{{item.price}}
+        </div>
+        <!-- Rating container for cartItem -->
+        <div class="card__rating">
+            Rating:{{item.rating}}
+        </div>
+        <!-- Quantity container for cartItem -->
+        <div class="card__quantity">
+            Quantity:{{item.quantity}}
+        </div>
+        <!-- Remove icon container for cartItem -->
+        <div class="card__remove-icon" (click)="removeFromCart(item)">
+            <img src="../../../assets/images/remove.png">
+        </div>
+    </div>
+    <!-- End of Card view to loop over cartItems -->
+</div>
+<!-- End of Cart Container -->

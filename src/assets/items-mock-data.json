@@ -1,0 +1,75 @@
+{
+    "items": [{
+            "name": "iPhone",
+            "price": "Rs. 70,625.00",
+            "category": "Electronics",
+            "rating": 4.5,
+            "quantity": 1,
+            "thumbnail": "../assets/images/iphone.jpg"
+        },
+        {
+            "name": "Air Conditioner",
+            "price": "Rs. 35,257.00",
+            "category": "Electronics",
+            "rating": 3.5,
+            "quantity": 1,
+            "thumbnail": "../assets/images/air-conditioner.jpeg"
+        },
+        {
+            "name": "Cadbuary Celebrations",
+            "price": "Rs. 120.00",
+            "category": "Food",
+            "rating": 5,
+            "quantity": 1,
+            "thumbnail": "../assets/images/cadbuary-celebrations.jpeg"
+        },
+        {
+            "name": "Bed",
+            "price": "Rs. 17,459.00",
+            "category": "Furnishing",
+            "rating": 4,
+            "quantity": 1,
+            "thumbnail": "../assets/images/bedsheets.jpeg"
+        },
+        {
+            "name": "Shirt",
+            "price": "Rs. 1250.00",
+            "category": "Apparel",
+            "rating": 3,
+            "quantity": 1,
+            "thumbnail": "../assets/images/shirt.jpg"
+        },
+        {
+            "name": "Saree",
+            "price": "Rs. 5300.00",
+            "category": "Apparel",
+            "rating": 4.8,
+            "quantity": 1,
+            "thumbnail": "../assets/images/saree.jpeg"
+        },
+        {
+            "name": "Refrigerator",
+            "price": "Rs. 27,250.00",
+            "category": "Electronics",
+            "rating": 4.2,
+            "quantity": 1,
+            "thumbnail": "../assets/images/refrigerator.jpeg"
+        },
+        {
+            "name": "Shoes",
+            "price": "Rs.980.00",
+            "category": "Footwear",
+            "rating": 2.5,
+            "quantity": 1,
+            "thumbnail": "../assets/images/shoes.jpeg"
+        },
+        {
+            "name": "T-Shirt",
+            "price": "Rs. 785.00",
+            "category": "Apparel",
+            "rating": 3.9,
+            "quantity": 1,
+            "thumbnail": "../assets/images/tshirt.jpg"
+        }
+    ]
+}

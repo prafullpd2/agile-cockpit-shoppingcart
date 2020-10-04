@@ -1,0 +1,113 @@
+.search-bar-container {
+    margin: 8rem 0 0 7rem;
+    &__input {
+        width: 15rem;
+        margin-right: 1rem;
+        line-height: 1.5rem;
+        border: 0.1rem solid #887575;
+        border-radius: 0.2rem;
+    }
+    &__icon {
+        &--search {
+            position: relative;
+            height: 1.1rem;
+            left: -3rem;
+            top: 0.2rem;
+        }
+    }
+}
+
+.display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 2rem 3rem 3rem 6rem;
+}
+
+.card {
+    background-color: #faf7f7;
+    margin: 1rem;
+    padding: 1rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    & div {
+        margin: 1rem;
+        color: #213458;
+    }
+    & div span {
+        font-weight: 600;
+    }
+    &__name {
+        text-align: center;
+        font-weight: 600;
+    }
+    &__image-container {
+        height: 10rem;
+        width: 10rem;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    &__thumbnail {
+        max-width: 8rem;
+        max-height: 8rem;
+        padding: 1rem;
+    }
+    &__btn {
+        text-align: center;
+        font-weight: 600;
+        cursor: pointer;
+        & span {
+            color: #887575;
+        }
+        & span:hover {
+            color: #213458;
+        }
+    }
+}
+
+
+/* Big screens devices (desktop large screens, greater than 1440px) */
+
+@media (max-width: 1440px) {
+    .search-bar-container {
+        margin: 8rem 0 0 5rem;
+    }
+    .display-container {
+        margin: 2rem 3rem 3rem 4rem;
+    }
+}
+
+
+/* iPad/desktop devices (landscape mode, less than 768px) */
+
+@media (max-width: 1024px) {
+    .search-bar-container {
+        margin: 8rem 0 0 8rem;
+    }
+    .display-container {
+        margin: 2rem 3rem 3rem 7rem;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 768px) {
+    .search-bar-container {
+        margin: 8rem 6rem 1rem;
+    }
+    .display-container {
+        margin: 2rem 2rem;
+        justify-content: space-around;
+    }
+}
+
+
+/* Extra- Small devices (portrait phones, less than 767px) */
+
+@media (max-width: 767px) {
+    .search-bar-container {
+        margin: 8rem 1rem 1rem;
+    }
+}
